@@ -17,12 +17,69 @@ Fork and clone this repository and answer questions as you research directly in 
 ## Questions:
 
 1. What does the term noSQL refer to, and what other term is often used synonymously with noSQL?
+
+Non-relational database
+
 1. In this class we will be using the document style of non-relational databases. What are the charecteristics of a document based db? 
+Document databases offer a variety of advantages, including:
+
+
+An intuitive data model that is fast and easy for developers to work with.
+A flexible schema that allows for the data model to evolve as application needs change.
+The ability to horizontally scale out.
+Because of these advantages, document databases are general-purpose databases that can be used in a variety of use cases and industries.
+
+Document databases are considered to be non-relational (or NoSQL) databases. Instead of storing data in fixed rows and columns, document databases use flexible documents. Document databases are the most popular alternative to tabular, relational databases. Learn more about NoSQL databases.
+
 1. In this class we will be using Mongo specificially as our no-SQL db. Look into Mongo and answer this question: what is the priamry difference between how Mongo is maintained vs SQL?
+
+
+
 1. Mongo DBs are organized into documents. Describe an example of a table in SQL that contains users, and then describe the equivalent DB setup in Mongo. 
+
+SQL table with users, colums - ID, Username, Email, Password
+
+Mongo: 
+{
+  ID: 1,
+  Name: "name",
+  Email: "email",
+  Password: "pass"
+}
+
 1. What is an example situation where a non-relational database makes more sense versus a relational db?
+
+Document databases are general-purpose databases that serve a variety of use cases for both transactional and analytical applications:
+
+Single view or data hub
+Customer data management and personalization
+Internet of Things (IoT) and time-series data
+Product catalogs and content management
+Payment processing
+Mobile apps
+Mainframe offload
+Operational analytics
+Real-time analytics
+
 1. What are the benefits of SQL databases? NoSQL Databases?
+
+Document databases have many strengths:
+
+The document model is ubiquitous, intuitive, and enables rapid software development.
+The flexible schema allows for the data model to change as an application's requirements change.
+Document databases have rich APIs and query languages that allow developers to easily interact with their data.
+Document databases are distributed (allowing for horizontal scaling as well as global data distribution) and resilient.
+These strengths make document databases an excellent choice for a general-purpose database.
+
+A common weakness that people cite about document databases is that many do not support multi-document ACID transactions. We estimate that 80%-90% of applications that leverage the document model will not need to use multi-document transactions.
+
+Note that some document databases like MongoDB support multi-document ACID transactions.
+
+Visit What are ACID Transactions? to learn more about how the document model mostly eliminates the need for multi-document transactions and how MongoDB supports transactions in the rare cases where they are needed.
+
 1. Explain the differences between ACID and BASE models.
+
+
 
 ## Visual Comparisons
 
